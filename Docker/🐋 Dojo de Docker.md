@@ -7,10 +7,10 @@
 
 ### Dicas de ouro! ✨
 
-- O começo da mágica mora em criar um arquivo `Dockerfile`
-- Para gerar uma imagem docker é só mandar um `docker build .` na pasta em que está o `Dockerfile` 
+- O começo da mágica está em criar um arquivo `Dockerfile`
+- Para gerar uma imagem docker é só usar o comando `docker build .` na pasta em que está o `Dockerfile` 
 - Utilize a imagem `ubuntu:latest`
-- Não compilem o binário dentro do conteiner
+- Não compile o binário dentro do conteiner, faça só a cópia dele já compilado
 - Use o próprio `Dockerfile` para instalar o que for necessário no container
 - O `ENTRYPOINT` deve ser o próprio binário
 

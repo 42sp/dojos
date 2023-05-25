@@ -1,5 +1,5 @@
   
-> 📋 Resumo do desafio: Em grupos de pelo menos 3 pessoas, escolha um repositório de um projeto da 42 de um dos membros do time e configure o Github Actions para rodar automaticamente a cada push na `main` a sequência de passos do diagrama abaixo.
+> 📋 Resumo do desafio: Em grupos de pelo menos 3 pessoas, escolha um repositório de um projeto da 42 de um dos membros do time e configure o Github Actions para rodar automaticamente a cada push na `main` a sequência de passos `Norminette`, `Build`, `Tests` e `Valgrind`
 
 ## Dicas 😜
 
