@@ -1,7 +1,7 @@
 
 > 📋 Resumo do desafio: Em grupos de pelo menos 3 pessoas, baixe o repositório indicado abaixo e faça o binário ser executado a partir de um container Docker.
 
-*https://github.com/tdd42sp/unstuck_minishell
+*https://github.com/tdd42sp/unstuck_minishell*
 
 ## Dicas 😜
 
