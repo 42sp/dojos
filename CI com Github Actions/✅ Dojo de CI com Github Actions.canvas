@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"type":"text","text":"Tests","id":"3e2bf36d5f302fcd","x":40,"y":640,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"Build","id":"8d7ff9266a1f6474","x":-280,"y":640,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"Valgrind","id":"ec6f8fbb1ee946db","x":360,"y":640,"width":250,"height":60,"color":"4"},
+		{"type":"text","text":"Norminette","id":"a125385758d3cb7c","x":-600,"y":640,"width":250,"height":60,"color":"4"},
+		{"type":"file","file":"Eventos internos/Dojozão de quinta/CI com Github Actions/✅ Dojo de CI com Github Actions.md","id":"45c0a2998e938d0e","x":-720,"y":-220,"width":1440,"height":820}
+	],
+	"edges":[
+		{"id":"81cde77dee0c5d76","fromNode":"3e2bf36d5f302fcd","fromSide":"right","toNode":"ec6f8fbb1ee946db","toSide":"left"},
+		{"id":"c2eb83f0fa5a1989","fromNode":"8d7ff9266a1f6474","fromSide":"right","toNode":"3e2bf36d5f302fcd","toSide":"left"},
+		{"id":"a0bffe0b3f95cf4f","fromNode":"a125385758d3cb7c","fromSide":"right","toNode":"8d7ff9266a1f6474","toSide":"left"}
+	]
+}
