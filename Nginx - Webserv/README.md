@@ -73,7 +73,6 @@ O protótipo básico da classe a ser criada é o seguinte:
 class Server {
 	int listen;
 	std::string root;
-	std::map<std::string, Location> location;
 }
 ```
 
@@ -88,8 +87,8 @@ int main()
 
     Server server = Server();
 
-    std::cout << "listen:" << server.listen << std::endl;
-    std::cout << "configured root:" << server.root << std::endl;
+    std::cout << "Server listen:" << server.listen << std::endl;
+    std::cout << "Server root:" << server.root << std::endl;
     
     return 0;
 }
@@ -103,7 +102,6 @@ Server root:/usr/share/nginx/html
 ```
 
 👉🏾 **Não leia ainda a próxima parte se não tiver alcançado o resultado esperado!**
-
 
 ### Terceira parte do desafio (bônus!)
 
