@@ -1,6 +1,18 @@
 
 > 📋 Resumo do desafio: Em grupos de pelo menos 3 pessoas, escolha o minishell de alguma pessoa e faça-o rodar utilizando o comando `docker run minishell`
 
+## Sdds minishell
+
+Não queremos acionar gatilhos, mas sabemos todos que o mini~~s~~hell é  um projeto "desafiador" na 42. Passar pelo `minishell` é um marco. Um marco bom? Um marco ruim? Aí vai da experiência de cada um.
+
+Aqui vamos aproveitar um minishell já pronto para aprender um pouquinho sobre docker. Bora?
+
+## O desafio
+
+O desafio é bem simples: disponibilizar um minishell para que qualquer pessoa no mundo consiga utilizá-lo simplesmente usando o comando `docker run minishell`
+
+Pode escolher o minshell de quem você quiser! 🙌🏾
+
 ## Dicas 😜
 
 ### Dicas de ouro! ✨
