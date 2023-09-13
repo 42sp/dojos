@@ -9,6 +9,8 @@ Se uma etapa do Pipeline não passar, a seguinte não deve ser executada, de aco
 
 `Norminette (linter)` > `Compilação` > `Execução de testes` > `Verificação de vazamento de memória`
 
+[Nesse link aqui](https://github.com/tiolula/tdd_libft/actions/runs/4953881034) você pode conferir um exemplo de como deve ficar a execução do pipeline depois que você configurá-lo para rodar a Norminette. Ao final do desafio, deve estar na imagem da execução não só o passo da Norminette, mas também os demais.
+
 _Obs: Se o projeto escolhido não tem testes, ta aí um bom Bônus maneirinho para esse Dojo: Escreva alguns testes pra ele e coloque pra rodar._
 
 ## Dicas 😜
