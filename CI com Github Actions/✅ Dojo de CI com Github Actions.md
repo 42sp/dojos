@@ -7,7 +7,7 @@ O desafio aqui é a configuração de um Pipeline usando Github Actions. Esse Pi
 
 Se uma etapa do Pipeline não passar, a seguinte não deve ser executada, de acordo com a seguinte ordem de etapas:
 
-`Norminette (linter) > Compilação > Execução de testes > Verificação de vazamento de memória`
+`Norminette (linter)` > `Compilação` > `Execução de testes` > `Verificação de vazamento de memória`
 
 _Obs: Se o projeto escolhido não tem testes, ta aí um bom Bônus maneirinho para esse Dojo: Escreva alguns testes pra ele e coloque pra rodar._
 
