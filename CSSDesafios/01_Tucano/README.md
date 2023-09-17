@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
- ArtesComCSS/01_Tucano
+CSSDesafios/01_Tucano
 </h1>
 
 <p align="center">
@@ -11,10 +11,11 @@
 </p>
 
 ## O Tucano: Uma Breve Introdução
-O tucano é uma ave tropical lindíssima, famosa por suas plumagens deslumbrantes e por um bico amarelo-alaranjado que mais parece uma obra de arte. Eles são conhecidos por sua vivacidade e são frequentemente associados à fauna exuberante das florestas tropicais da América Central e América do Sul.
+O tucano é uma ave tropical lindíssima, famosa por suas plumagens deslumbrantes e por um bico amarelo-alaranjado que mais parece uma obra de arte. Eles são conhecidos por sua vivacidade e são frequentemente associados à fauna exuberante das florestas tropicais da América Central e América do Sul. Que tal reproduzir essa beleza?
 
 ## 🚀 O Desafio
-Seu desafio é utilizar apenas HTML e CSS para recriar o tucano em um estilo flat geométrico (conforme mostrado no exemplo). Para conseguir fazer esse desafio, você terá que ter o conhecimento básico de HTML e CSS.
+Seu desafio é utilizar apenas HTML e CSS para recriar o tucano em um estilo flat geométrico (conforme mostrado no exemplo). <br>
+❗️ | Para conseguir realizar este desafio, você precisará ter conhecimento básico da sintaxe do HTML e CSS. Caso ainda não tenha, este projeto pode ajudá-lo, porém, a dificuldade será maior.
 
 Pontos a serem considerados durante a criação:
 - Não utilize arquivos externos não-CSS ou HTML para compor a arte, como SVG, PNG, JPG e outros. A ideia do desafio é que você seja capaz de criar cada elemento manualmente, sem a necessidade de importar assets externos no projeto.
@@ -26,9 +27,9 @@ Pontos a serem considerados durante a criação:
 ⭐⭐ Bônus do Bônus: Ter um repositório no Github para hospedar a sua solução, com um readme bonito e compartilhar o resultado nas redes sociais como no LinkedIn através da hashtag #42SPDOJOS e marcar a 42São Paulo na postagem.
 
 ## Estrutura do diretorio/
-- [Assets/](Assets/) | Pasta de Assets com uma subpasta dedicada ao CSS que contém as variáveis das cores a serem chamadas no projeto, e outra subpasta dedicada às imagens da arte com as quais você irá se referenciar na hora de criar.
-- [index.html](index.html) | Arquivo HTML com a estrutura básica pronta.
-- README.md: Com instruções sobre o desafio.
+- ```Assets/``` | Pasta de Assets com uma subpasta dedicada ao CSS que contém as variáveis das cores a serem chamadas no projeto, e outra subpasta dedicada às imagens da arte com as quais você irá se referenciar na hora de criar.
+- ```index.html``` | Arquivo HTML com a estrutura básica pronta.
+- ```README.md``` | Com instruções sobre o desafio.
 
 ## Dicas 😜
 ### Dica de ouro! ✨
@@ -37,10 +38,17 @@ Pontos a serem considerados durante a criação:
 - Utilizar as propriedades para arredondar as bordas, posicionamentos específicos e sobreposições podem te ajudar.
 - Tenha o guia de estilo em mãos (ele está dentro da pasta assets/images), pois ele o ajudará a visualizar as formas geométricas necessárias a serem criadas. Caso ainda esteja enfrentando dificuldades em relação aos tamanhos, paletas e afins, acesse o Figma do desafio [Desafio do Tucano - 42Figma](https://www.figma.com/file/IMqXIoyd5fpnFveUSi3euf/42Dojos?type=design&node-id=0%3A1&mode=design&t=i1jCWuPBO5xVfzl7-1) e cutuque a arte. 🐦
 
-## 📎 Referências
-- [The Shapes of CSS](https://css-tricks.com/the-shapes-of-css/) É possível ir além de quadrados, retângulos e círculos com CSS.
-- [Batalha de CSS](https://cssbattle.dev/) | Caso você queira treinar offline, neste site existem desafios diários que irão te ajudar ainda mais a praticar.
-- [Beresnev - Tucano](https://dribbble.com/Beresnev) | O tucano foi reproduzido utilizando as artes do artista como inspiração.
-- Está hard? RTFM!
+## 🛠️ Instalações
+### Requisitos/ Recomendações
+- Computador : Desktop, laptop etc.
+- Editor de Código : Visual Studio Code, Sublime Text, Atom, Brackets, entre outros.
+- Navegador Web :  Google Chrome, Mozilla Firefox, Microsoft Edge ou/e Safari.
 
-<p align="center"> Desenvolvido com 💜 de Cadete para Cadetes </p>
+## 📎 Referências
+- [The Shapes of CSS](https://css-tricks.com/the-shapes-of-css/) | É possível ir além de quadrados, retângulos e círculos com CSS.
+- [Extensao : Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) | Extensão p/ o VSCODE que permite iniciar um servidor local diretamente do VSCode para testar seu site ou aplicativo web. Ele atualiza automaticamente a página no navegador quando você faz alterações no código, 
+- [Batalha de CSS](https://cssbattle.dev/) | Caso você queira treinar off, neste site existem desafios diários que irão te ajudar ainda mais a praticar.
+- [Beresnev - Tucano](https://dribbble.com/Beresnev) | O tucano foi reproduzido utilizando as artes do artista como inspiração.
+- RTFM!
+
+<p align="center"> Desenvolvido com 💙 de Cadete para Cadetes </p>
