@@ -32,4 +32,4 @@ QUE COMEVEM OS JOGOS! 🙌🏾
 
 Aqui você encontra as pontuações históricas deste jogo em desafios oficiais da 42 São Paulo.
 
-`ninguém jogou ainda.`
+`Fake Natties -> 1 ponto`
