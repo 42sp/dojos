@@ -39,3 +39,11 @@ Por exemplo:
 ## Dica de ouro! ✨
 
 - Baby Steps e TDD vão te ajudar muito. Sério! 👶🏾🍼 
+
+## 🙏🏾 Créditos
+
+Esse desafio foi retirado da leetcode.com, traduzido para português e colocado numa linguagem mais 42SP. 😛 
+
+Você encontra o original e muitos outros [aqui](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/?envType=study-plan-v2&envId=top-100-liked)
+
+Obrigado, leetcode!
