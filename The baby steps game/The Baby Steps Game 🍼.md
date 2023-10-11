@@ -26,7 +26,7 @@ Cada time será responsável por contabilizar seus pontos de acordo com as segui
 - Cada vez que não pular o passo 3, o time ganha meio ponto 
 - Caso se perca no fluxo, o time não deve contabilizar pontos até conseguir retornar à sequência de etapas proposta (🔴 > 🟢 > 🟢)
 
-QUE COMEVEM OS JOGOS! 🙌🏾
+QUE COMECEM OS JOGOS! 🙌🏾
 
 # Score Board
 
