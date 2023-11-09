@@ -46,7 +46,7 @@ conhecimento em matemática.
 - Um makefile já estará disponível, você pode modificá-lo para adicionar seus
 	arquivos, mas não pode alterar de mais.
 - Bônus devem estar em uma pasta separada (`cp` é um comando amigo).
-- Por **Neith**, teste seu código!!!
+- Por **Neith**! use seu cérebro.
 
 # Capitulo 4
 ## Parte Mandatoria - Tron.exec
