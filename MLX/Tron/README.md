@@ -45,8 +45,7 @@ conhecimento em matemática.
 - Toda memória alocada deve ser devidamente liberada.
 - Um makefile já estará disponível, você pode modificá-lo para adicionar seus
 	arquivos, mas não pode alterar de mais.
-- Bônus devem estar em uma pasta separada (`cp -r * bonus/*{_bonus}.c` é um
-	comando amigo).
+- Bônus devem estar em uma pasta separada (`cp` é um comando amigo).
 - Por **Neith**, teste seu código!!!
 
 # Capitulo 4

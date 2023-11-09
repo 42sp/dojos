@@ -2,24 +2,29 @@
 
 ECHO=/usr/bin/echo
 CAT=/usr/bin/cat
+UNZIP=/usr/bin/unzip
 
 selectMakefile () {
 	case $($CAT .env) in
-		"CODAM") $ECHO -e -n > Makefile "#CODAM
+		"CODAM") if test ! -d MLX42
+			then
+				$UNZIP MLX42.zip
+			fi
+			$ECHO -e -n > Makefile "#CODAM
 NAME=Tron.exec
 NAME_BONUS=Tron.bonus
 GCC_FLAGS=-Wall -Wextra -Werror
 MLX_LIB=MLX42/build/libmlx42.a
 MLX_FLAGS=-LMLX42/build -lmlx42 -lm -ldl -pthread -lglfw
 REMOVE=/usr/bin/rm -fr
-SRC=\${wildcard *.c}
-BONUS_SRC=\${wildcard bonus/*.c}
+YOUR_SRC=\${wildcard source/*.c}
+YOUR_BONUS_SRC=\${wildcard bonus/*.c}
 
 all: \${MLX_LIB} \${NAME}
 .PHONY: all
 
-\${NAME}: \${SRC}
-	cc \${GCC_FLAGS} -I. \${MLX_FLAGS} \${SRC} -o \${NAME}
+\${NAME}: \${YOUR_SRC}
+	cc \${GCC_FLAGS} -I. \${MLX_FLAGS} \${YOUR_SRC} -o \${NAME}
 
 \${MLX_LIB}:
 ifeq (, \${wildcard MLX42/build})
@@ -28,18 +33,58 @@ ifeq (, \${wildcard MLX42/build})
 endif
 	make -j4 -C MLX42/build
 
+bonus:
+	make YOUR_SRC=\"\${YOUR_BONUS_SRC}\" NAME=\${NAME_BONUS}
+
 fclean:
 	\${REMOVE} MLX42/build \${NAME} \${NAME_BONUS}
 .PHONY:clean
 
 re: fclean
 ifneq (, \${wildcard \${NAME_BONUS}})
-	make SRC=\"\${BONUS_SRC}\"
+	make YOUR_SRC=\"\${YOUR_BONUS_SRC}\"
 else
 	make
 endif
 .PHONY:re" ;;
-		"FRENCH") $ECHO -n -e > Makefile "#FRENCH\n" ;;
+		"FRENCH") if test ! -d minilibx-linux
+			then
+				$UNZIP minilibx-linux.zip
+			fi
+			$ECHO -n -e > Makefile "#FRENCH
+NAME=Tron.exec
+NAME_BONUS=Tron.bonus
+GCC_FLAGS=-Wall -Wextra -Werror
+MLX_LIB=minilibx-linux/libmlx.a
+MLX_FLAGS=-Lminilibx-linux -lmlx -lX11 -lXext
+REMOVE=/usr/bin/rm -fr
+YOUR_SRC=\${wildcard source/*.c}
+YOUR_BONUS_SRC=\${wildcard bonus/*.c}
+
+all: \${MLX_LIB} \${NAME}
+.PHONY: all
+
+\${NAME}: \${YOUR_SRC}
+	cc \${GCC_FLAGS} -I. \${MLX_FLAGS} \${YOUR_SRC} -o \${NAME}
+
+\${MLX_LIB}:
+	make -C minilibx-linux
+
+bonus:
+	make YOUR_SRC=\"\${YOUR_BONUS_SRC}\" NAME=\${NAME_BONUS}
+
+fclean:
+	\${REMOVE} mini*linux/*.a mini*linux/Makefile.gen mini*linux/obj \${NAME} \
+		\${NAME_BONUS}
+.PHONY:clean
+
+re: fclean
+ifneq (, \${wildcard \${NAME_BONUS}})
+	make YOUR_SRC=\"\${YOUR_BONUS_SRC}\"
+else
+	make
+endif
+.PHONY:re" ;;
 		*) $ECHO "Error: .env!"; rm -fr .env Makefile;;
 	esac
 }
