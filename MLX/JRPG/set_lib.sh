@@ -11,8 +11,8 @@ selectMakefile () {
 				$UNZIP MLX42.zip
 			fi
 			$ECHO -e -n > Makefile "#CODAM
-NAME=Tron.exec
-NAME_BONUS=Tron.bonus
+NAME=RPG.exec
+NAME_BONUS=RPG.bonus
 GCC_FLAGS=-Wall -Wextra -Werror
 MLX_LIB=MLX42/build/libmlx42.a
 MLX_FLAGS=-LMLX42/build -lmlx42 -lm -ldl -pthread -lglfw
@@ -52,8 +52,8 @@ endif
 				$UNZIP minilibx-linux.zip
 			fi
 			$ECHO -n -e > Makefile "#FRENCH
-NAME=Tron.exec
-NAME_BONUS=Tron.bonus
+NAME=RPG.exec
+NAME_BONUS=RPG.bonus
 GCC_FLAGS=-Wall -Wextra -Werror
 MLX_LIB=minilibx-linux/libmlx.a
 MLX_FLAGS=-Lminilibx-linux -lmlx -lX11 -lXext

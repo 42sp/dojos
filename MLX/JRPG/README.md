@@ -11,12 +11,15 @@
 
 > RPG é legal, vocês deveriam marcar de fazer uma campanha no final de semana.
 
-<div align="center">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/
-		23JJCCidDXM?si=mDlo-zuxXFv8T_cN" title="YouTube video player" 
-		frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-		encrypted-media; gyroscope; picture-in-picture; web-share" 
-		allowfullscreen></iframe>
+<div align="center" style="background-color: SteelBlue;" >
+	RPGS contém otimas <a href="https://youtu.be/1ZGMt36AjAs?si=
+		VzkAioAwN0ci9LY1&t=63" target="_blank">mú</a>
+	<a href="https://youtu.be/cwABWVby-Xw?si=UMd5Lgnwr5QT4sjM" target="_blank">
+		si</a>
+	<a href="https://youtu.be/_BNXe3QSLfM?si=THqEdM_P_K4cHP0n" target="_blank">
+		ca</a>
+	<a href="https://youtu.be/4qnlfL5gfgo?si=UJ1191WvpSeEaa3m" target="_blank">
+		s</a>
 </div>
 
 # Capitulo 2
@@ -33,14 +36,13 @@ manipulação de espaço 2D e imagens.
 
 - Você deve codar em C.
 - Não há norma, voe alto como um
-	<a href="https://www.youtube.com/watch?v=d43lJsK7Kvo">passáro livre</a>.
+	<a href="https://www.youtube.com/watch?v=d43lJsK7Kvo">pássaro livre</a>.
 - Seu programa não deve apresentar errors fatais (segfault, bus error, double
 	free, etc) ou comportamento inesperado.
 - Toda memória alocada deve ser devidamente liberada.
-- Um makefile já estará disponível, você pode modificá-lo para adicionar seus
-	arquivos, mas não pode alterar de mais.
+- Um makefile já estará disponível, você pode modificá-lo, mas não mexa muito.
 - Bônus devem estar em uma pasta separada (`cp` é um comando amigo).
-- Por **Neith**! use seu cérebro.
+- Por **Neith**! Use seu cérebro.
 
 # Capitulo 4
 ## Parte Mandatoria - RPG.exec
@@ -80,18 +82,18 @@ manipulação de espaço 2D e imagens.
 
 ### Jogo
 
-- O jogador e o inimigo são structs separadas porém com os mesmos atributos
-	e funções (pense em: "se eu posso por que ele não?").
-- 
+- O jogador e o inimigo são structs iguais em atributos e funções.
+- Clicar no X da janela deve fechar o jogo.
+- Apertar ESC deve fechar o jogo.
+- O jogo segue um sistema de turnos, sendo o turno de vantagem para o jogador.
+- O jogador pode escolher entre 2 opções, defender e atacar.
+- O inimigo ataca automaticamente em todos os seus turnos.
+- As setas do teclado controlam o seletor e a tecla Z ou Enter confirma a ação.
+- Se o jogador morrer, o jogo fecha e o terminal exibe uma mensagem de game
+	over.
+- Se o inimigo morrer, o jogo fecha e o terminal exibe uma mensagem de vitória.
 
 <div align="center" style="background-color: yellow">
-	<a href="https://pt.wikipedia.org/wiki/Círculo_unitário" target="_blank">
-		https://pt.wikipedia.org/wiki/Círculo_unitário</a><br>
-	<a href="https://www.todamateria.com.br/seno-cosseno-e-tangente/"
-		target="_blank">https://www.todamateria.com.br/seno-cosseno-e-tangente/
-		</a><br>
-	<a href="https://pt.wikipedia.org/wiki/Trigonometria" target="_blank">
-		https://pt.wikipedia.org/wiki/Trigonometria</a><br>
 	<a href="https://github.com/andreyvdl/MiniLibX_my_docs" target="_blank">
 		https://github.com/andreyvdl/MiniLibX_my_docs</a>
 </div>
@@ -99,9 +101,21 @@ manipulação de espaço 2D e imagens.
 # Capitulo 5
 ## Bonus - RPG.bonus
 
-- Você devera criar outro progama, dessa vez chamado `RPG.bonus`.
+- Você devera criar outro programa, dessa vez chamado `RPG.bonus`.
 
 Você pode adicionar qualquer um desses bonus, ou todos para se sentir um
 especialista:
 
+- Adicionar gráficos (podem ser coisas como sprites do inimigo, barra de vida,
+	animação de ataque, animação de dano, etc).
+- Aumentar a complexidade da struct (podem ser coisas como velocidade, arma,
+	armadura, magia, ataque mágico, defesa mágica, etc).
+- Míltiplos inimigos.
+- Bots de party para o jogador.
+- Sistema ATB (Active Time Battle).
+- Inventário com itens para serem utilizados.
+- Permitir que o jogador escolha uma classe (saber, caster, archer, berserker,
+	assassin, lancer ou rider).
+- Criar um bot inteligente para o inimigo.
+- Selecionar as opções com o mouse.
 

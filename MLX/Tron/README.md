@@ -30,7 +30,7 @@ luz</a>.
 &emsp;&emsp;O protagonista do filme de 82 é um programador, assim como você,
 logo, agora é sua vez de criar um jogo de corrida de motos de luz.
 &emsp;&emsp;O objetivo principal desse projeto é aprender um pouco sobre como
-trabalhar com a MiniLibX, isso pois bibliotecas gráficas são bem parecidas
+trabalhar com a MiniLibX, isso, pois bibliotecas gráficas são bem parecidas
 se você aprende uma, aprendeu todas, o outro objetivo é exercitar um pouco de
 conhecimento em matemática.
 
@@ -39,14 +39,13 @@ conhecimento em matemática.
 
 - Você deve codar em C.
 - Não há norma, voe alto como um
-	<a href="https://www.youtube.com/watch?v=d43lJsK7Kvo">passáro livre</a>.
-- Seu programa não deve apresentar errors fatais (segfault, bus error, double
+	<a href="https://www.youtube.com/watch?v=d43lJsK7Kvo">pássaro livre</a>.
+- Seu programa não deve apresentar erros fatais (segfault, bus error, double
 	free, etc) ou comportamento inesperado.
 - Toda memória alocada deve ser devidamente liberada.
-- Um makefile já estará disponível, você pode modificá-lo para adicionar seus
-	arquivos, mas não pode alterar de mais.
+- Um makefile já estará disponível, você pode modificá-lo, mas não mexa muito.
 - Bônus devem estar em uma pasta separada (`cp` é um comando amigo).
-- Por **Neith**! use seu cérebro.
+- Por **Neith**! Use seu cérebro.
 
 # Capitulo 4
 ## Parte Mandatoria - Tron.exec
@@ -92,23 +91,20 @@ conhecimento em matemática.
 - O jogador começa no lado esquerdo na janela, com a posição vertical no meio
 	da tela e deve começar a andar para o lado direito.
 - Os botões de controle podem ser as setas do teclado e/ou W, A, S e D.
-- Se o jogador alcançar os limites da tela o jogo deve fechar.
+- Se o jogador alcançar os limites da tela, o jogo deve fechar.
 - Clicar no X da janela deve fechar o jogo.
 - Apertar ESC deve fechar o jogo.
 - O jogo deve ser responsivo, ou seja, se o jogador apertar uma tecla o jogo
-	deve reagir de forma quase simultânea (seria bem frustante apertar uma
+	deve reagir de forma quase simultânea (seria bem frustrante apertar uma
 	tecla e o personagem só reagir 2 segundos depois).
-- O jogador não tem permição de dar 180° da direção que ele está indo
+- O jogador não tem permissão de dar 180° da direção que ele está indo
 	atualmente.
 
 <div align="center" style="background-color: yellow">
-	<a href="https://pt.wikipedia.org/wiki/Círculo_unitário" target="_blank">
-		https://pt.wikipedia.org/wiki/Círculo_unitário</a><br>
-	<a href="https://www.todamateria.com.br/seno-cosseno-e-tangente/"
-		target="_blank">https://www.todamateria.com.br/seno-cosseno-e-tangente/
-		</a><br>
-	<a href="https://pt.wikipedia.org/wiki/Trigonometria" target="_blank">
-		https://pt.wikipedia.org/wiki/Trigonometria</a><br>
+	<a href="https://pt.wikipedia.org/wiki/Delta_timing" target="_blank">
+		https://pt.wikipedia.org/wiki/Delta_timing</a><br>
+	<a href="https://pt.wikipedia.org/wiki/Quadros_por_segundo" target="_blank">
+		https://pt.wikipedia.org/wiki/Quadros_por_segundo</a><br>
 	<a href="https://github.com/andreyvdl/MiniLibX_my_docs" target="_blank">
 		https://github.com/andreyvdl/MiniLibX_my_docs</a>
 </div>
@@ -116,13 +112,13 @@ conhecimento em matemática.
 # Capitulo 5
 ## Bonus - Tron.bonus
 
-- Você devera criar outro progama, dessa vez chamado `Tron.bonus`.
+- Você devera criar outro programa, dessa vez chamado `Tron.bonus`.
 
 Você pode adicionar qualquer um desses bonus, ou todos para se sentir um
 especialista:
 
 - Multiplayer local de no mínimo 2 jogadores.
-- Esconder uma textura no fundo que é revelada aos poucos conforme os jogadores
+- Esconder uma textura no fundo, que é revelada aos poucos conforme os jogadores
 	andam.
 - Colisão com os pixels já andados (no caso do multiplayer o terminal deverá
 	listar qual jogador sobreviveu no final, já no singleplayer o terminal
