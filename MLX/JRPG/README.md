@@ -57,11 +57,8 @@ manipulação de espaço 2D e imagens.
 	</tr>
 	<tr>
 		<td style="font-weight: bold">Arquivos necessários</td>
-		<td><img src="https://external-content.duckduckgo.com/iu/?u=https
-			%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Ffacebook%2F001%2F650
-			%2F747%2Faaf.png&f=1&nofb=1&ipt
-			=c2207ab0bf2f61352e482d823d47c17c9b44335119f91b6b8479907357e56152
-			&ipo=images" alt="YES." width="50px"></td>
+		<td><img src="https://i.kym-cdn.com/photos/images/newsfeed/001/650/747/
+			aaf.png" alt="YES." width="50px"></td>
 	</tr>
 	<tr>
 		<td style="font-weight: bold">Descrição</td>
