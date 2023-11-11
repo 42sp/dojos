@@ -8,7 +8,7 @@ selectMakefile () {
 	case $($CAT .env) in
 		"CODAM") if test ! -d MLX42
 			then
-				$UNZIP MLX42.zip
+				$UNZIP ../MLX42.zip
 			fi
 			$ECHO -e -n > Makefile "#CODAM
 NAME=RPG.exec
@@ -49,7 +49,7 @@ endif
 .PHONY:re" ;;
 		"FRENCH") if test ! -d minilibx-linux
 			then
-				$UNZIP minilibx-linux.zip
+				$UNZIP ../minilibx-linux.zip
 			fi
 			$ECHO -n -e > Makefile "#FRENCH
 NAME=RPG.exec

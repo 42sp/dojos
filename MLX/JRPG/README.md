@@ -1,5 +1,5 @@
 # Capitulo 1
-## Introducao
+## Introducao 📢
 
 > Role-playing game, também conhecido como RPG (em português: "jogo narrativo",
 > "jogo de interpretação de papéis" ou "jogo de representação"), é um tipo de
@@ -23,7 +23,7 @@
 </div>
 
 # Capitulo 2
-## Objetivo
+## Objetivo 🎯
 
 Creio que todos já jogaram e/ou tiveram contato com Pokemon, Final Fantasy,
 Persona, ou qualquer outro RPG/JRPG, caso contrário recomendo dar uma
@@ -32,7 +32,7 @@ olha em vídeos do youtube para pegara ideia de um RPG/JRPG.
 manipulação de espaço 2D e imagens.
 
 # Capitulo 3
-## Instrucoes Comuns
+## Instrucoes Comuns 📝
 
 - Você deve codar em C.
 - Não há norma, voe alto como um
@@ -42,10 +42,13 @@ manipulação de espaço 2D e imagens.
 - Toda memória alocada deve ser devidamente liberada.
 - Um makefile já estará disponível, você pode modificá-lo, mas não mexa muito.
 - Bônus devem estar em uma pasta separada (`cp` é um comando amigo).
+- Você deve utilizar a biblioteca gráfica MiniLibX.
+- Você deve criar uma imagem, desenhar diretamente na janela é estritamente
+	proibido.
 - Por **Neith**! Use seu cérebro.
 
 # Capitulo 4
-## Parte Mandatoria - RPG.exec
+## Parte Mandatoria - RPG.exec 🔰
 
 <table align="center">
 	<tr>
@@ -66,21 +69,20 @@ manipulação de espaço 2D e imagens.
 	</tr>
 </table>
 
-### Graficos
+### Graficos 👾
 
-- Você deve utilizar a biblioteca gráfica MiniLibX.
-- Você deve criar uma imagem, desenhar diretamente na janela é estritamente
-	proibido.
 - O hud pode ter qualquer estilo, mas deve ser responsivo.
 - O hud deve ter um log de ações, ou seja, se o inimigo atacou, se o player
 	atacou.
 
 <div align="center" style="background-color: yellow">
-	<a href="https://github.com/andreyvdl/MiniLibX_my_docs" target="_blank">
-		https://github.com/andreyvdl/MiniLibX_my_docs</a>
+	French doc <a href="https://github.com/andreyvdl/MiniLibX_my_docs"
+		target="_blank">https://github.com/andreyvdl/MiniLibX_my_docs</a><br>
+	CODAM doc <a href="https://github.com/codam-coding-college/MLX42/wiki"
+		target="_blank">https://github.com/codam-coding-college/MLX42/wiki</a>
 </div>
 
-### Jogo
+### Jogo 🎮
 
 - O jogador e o inimigo são structs iguais em atributos e funções.
 - Clicar no X da janela deve fechar o jogo.
@@ -94,12 +96,14 @@ manipulação de espaço 2D e imagens.
 - Se o inimigo morrer, o jogo fecha e o terminal exibe uma mensagem de vitória.
 
 <div align="center" style="background-color: yellow">
-	<a href="https://github.com/andreyvdl/MiniLibX_my_docs" target="_blank">
-		https://github.com/andreyvdl/MiniLibX_my_docs</a>
+	French doc <a href="https://github.com/andreyvdl/MiniLibX_my_docs"
+		target="_blank">https://github.com/andreyvdl/MiniLibX_my_docs</a><br>
+	CODAM doc <a href="https://github.com/codam-coding-college/MLX42/wiki"
+		target="_blank">https://github.com/codam-coding-college/MLX42/wiki</a>
 </div>
 
 # Capitulo 5
-## Bonus - RPG.bonus
+## Bonus - RPG.bonus ⭐
 
 - Você devera criar outro programa, dessa vez chamado `RPG.bonus`.
 
@@ -118,4 +122,6 @@ especialista:
 	assassin, lancer ou rider).
 - Criar um bot inteligente para o inimigo.
 - Selecionar as opções com o mouse.
+- Status (envenenado, paralisado, mudo, em chamas, congelado, etc) e ícones de
+	status.
 

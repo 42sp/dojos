@@ -1,5 +1,5 @@
 # Capitulo 1
-## Introducao
+## Introducao 📢
 
 > Tron: Evolution é um jogo eletrônico do gênero TPS de ação e aventura
 > relacionado ao filme Tron: O Legado que foi desenvolvido pela Propaganda
@@ -22,7 +22,7 @@
 </div>
 
 # Capitulo 2
-## Objetivo
+## Objetivo 🎯
 
 Uma das cenas mais icônicas de Tron é a cena da corrida de
 <a href="https://www.youtube.com/watch?v=1kyiQzc4134" target="_blank">motos de
@@ -35,7 +35,7 @@ se você aprende uma, aprendeu todas, o outro objetivo é exercitar um pouco de
 conhecimento em matemática.
 
 # Capitulo 3
-## Instrucoes Comuns
+## Instrucoes Comuns 📝
 
 - Você deve codar em C.
 - Não há norma, voe alto como um
@@ -45,10 +45,13 @@ conhecimento em matemática.
 - Toda memória alocada deve ser devidamente liberada.
 - Um makefile já estará disponível, você pode modificá-lo, mas não mexa muito.
 - Bônus devem estar em uma pasta separada (`cp` é um comando amigo).
+- Você deve utilizar a biblioteca gráfica MiniLibX.
+- Você deve criar uma imagem, desenhar diretamente na janela é estritamente
+	proibido.
 - Por **Neith**! Use seu cérebro.
 
 # Capitulo 4
-## Parte Mandatoria - Tron.exec
+## Parte Mandatoria - Tron.exec 🔰
 
 <table align="center">
 	<tr>
@@ -70,11 +73,8 @@ conhecimento em matemática.
 	</tr>
 </table>
 
-### Graficos
+### Graficos 👾
 
-- Você deve utilizar a biblioteca gráfica MiniLibX.
-- Você deve criar uma imagem, desenhar diretamente na janela é estritamente
-	proibido.
 - O jogador deve ser representado por um pixel de cor X, e cada pixel que ele
 	andar deve estar da cor Y, assim o usuário consegue se localizar (dê
 	preferência a cores análogas para simular o filme).
@@ -82,11 +82,13 @@ conhecimento em matemática.
 <div align="center" style="background-color: yellow">
 	<a href="https://www.todamateria.com.br/cores-analogas/" target="_blank">
 		https://www.todamateria.com.br/cores-analogas/</a><br>
-	<a href="https://github.com/andreyvdl/MiniLibX_my_docs" target="_blank">
-		https://github.com/andreyvdl/MiniLibX_my_docs</a>
+	French doc <a href="https://github.com/andreyvdl/MiniLibX_my_docs"
+		target="_blank">https://github.com/andreyvdl/MiniLibX_my_docs</a><br>
+	CODAM doc <a href="https://github.com/codam-coding-college/MLX42/wiki"
+		target="_blank">https://github.com/codam-coding-college/MLX42/wiki</a>
 </div>
 
-### Jogo
+### Jogo 🎮
 
 - O jogador começa no lado esquerdo na janela, com a posição vertical no meio
 	da tela e deve começar a andar para o lado direito.
@@ -105,12 +107,14 @@ conhecimento em matemática.
 		https://pt.wikipedia.org/wiki/Delta_timing</a><br>
 	<a href="https://pt.wikipedia.org/wiki/Quadros_por_segundo" target="_blank">
 		https://pt.wikipedia.org/wiki/Quadros_por_segundo</a><br>
-	<a href="https://github.com/andreyvdl/MiniLibX_my_docs" target="_blank">
-		https://github.com/andreyvdl/MiniLibX_my_docs</a>
+	French doc <a href="https://github.com/andreyvdl/MiniLibX_my_docs"
+		target="_blank">https://github.com/andreyvdl/MiniLibX_my_docs</a><br>
+	CODAM doc <a href="https://github.com/codam-coding-college/MLX42/wiki"
+		target="_blank">https://github.com/codam-coding-college/MLX42/wiki</a>
 </div>
 
 # Capitulo 5
-## Bonus - Tron.bonus
+## Bonus - Tron.bonus ⭐
 
 - Você devera criar outro programa, dessa vez chamado `Tron.bonus`.
 
