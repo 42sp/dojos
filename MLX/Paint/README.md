@@ -12,7 +12,7 @@
 # Capitulo 2
 ## Objetivo 🎯
 
-Por mais que os usuários de N/Vim não gostem do mouse, esse projeto é sobre aprender a amá-lo.
+Por mais que os usuários de N/Vim não gostem do mouse, esse projeto é sobre aprender a amá-lo.   
 &emsp;&emsp;Tenha em mente que o mouse que deve ser utilizado para esse projeto é o padrão mais comum do mercado (dois botões superiores, um botão no scroll e o próprio scroll), mouses com botões laterais serão ignorados.
 
 # Capitulo 3

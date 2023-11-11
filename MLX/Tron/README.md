@@ -12,8 +12,8 @@
 # Capitulo 2
 ## Objetivo 🎯
 
-Uma das cenas mais icônicas de Tron é a cena da corrida de <a href="https://www.youtube.com/watch?v=1kyiQzc4134" target="_blank">motos de luz</a>.
-&emsp;&emsp;O protagonista do filme de 82 é um programador, assim como você, logo, agora é sua vez de criar um jogo de corrida de motos de luz.
+Uma das cenas mais icônicas de Tron é a cena da corrida de <a href="https://www.youtube.com/watch?v=1kyiQzc4134" target="_blank">motos de luz</a>.   
+&emsp;&emsp;O protagonista do filme de 82 é um programador, assim como você, logo, agora é sua vez de criar um jogo de corrida de motos de luz.   
 &emsp;&emsp;O objetivo principal desse projeto é aprender um pouco sobre como trabalhar com a MiniLibX, isso, pois bibliotecas gráficas são bem parecidas se você aprende uma, aprendeu todas, o outro objetivo é exercitar um pouco de conhecimento em matemática.
 
 # Capitulo 3
