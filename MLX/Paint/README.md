@@ -85,7 +85,7 @@ Você pode adicionar qualquer um desses bonus, ou todos para se sentir um especi
 - Desenhar com outra cor ao clicar com o botão direito do mouse.
 - Sumir com o mouse (talvez a função da França falhe! Se falhar, ignore esse bonus).
 
-### Bonus exclusivo da CODAM
+### Bonus exclusivo da CODAM 🌟
 
 - Permitir cores com transparência.
 - Mudar o ícone do mouse.
