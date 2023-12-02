@@ -24,7 +24,6 @@ Creio que todos já jogaram e/ou tiveram contato com Pokemon, Final Fantasy, Per
 - Você deve codar em C.
 - Não há norma, voe alto como um <a href="https://www.youtube.com/watch?v=d43lJsK7Kvo">pássaro livre</a>.
 - Seu programa não deve apresentar errors fatais (segfault, bus error, double free, etc) ou comportamento inesperado.
-- Toda memória alocada deve ser devidamente liberada.
 - Um makefile já estará disponível, você pode modificá-lo, mas não mexa muito.
 - Bônus devem estar em uma pasta separada (`cp` é um comando amigo).
 - Você deve utilizar a biblioteca gráfica MiniLibX.
