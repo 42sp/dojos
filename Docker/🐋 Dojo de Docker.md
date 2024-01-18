@@ -36,3 +36,16 @@ Pode escolher o minshell de quem você quiser! 🙌🏾
 
 > 😜 Se estiver conseguindo executar o binário a partir de um container Docker, faça o `push` dessa imagem para o `Dockerhub` e suba esse container a partir do `Dockerhub` em algum outro computador 
 
+### Bônus do Bônus
+
+Geralmente, quando você está subindo vários conteineres a partir de várias imagens para que funcionem em conjunto (por exemplo, um conteiner subindo uma imagem do front, outro subindo a do back e outro a do BD ) fica muito trabalhoso ficar subindo cada um usando uma linha de comando por vez.
+
+Para isso, existe uma solução muito utilizada por aí, que é o docker-compose.
+
+Segundo o chat GPT (usando um prompt muito doido):
+
+> O Docker Compose é como o diretor de uma orquestra para aplicativos, ajudando a organizar e gerenciar diferentes partes do programa para que possam trabalhar juntas sem confusão. Em vez de apenas lidar com músicos (contêineres) individualmente, ele também cuida dos instrumentos (imagens do Docker) necessários para cada um. Assim, seguindo uma partitura (arquivo de composição do Docker), o Docker Compose cria um ambiente harmonioso onde todos os componentes se unem para executar a melodia desejada do seu aplicativo.
+
+Aqui não vamos subir múltiplos conteineres, mas a ideia do bônus do bônus é você conseguir pelo menos usar o `docker-compose`.
+
+> O seu desafio aqui é conseguir subir este minishel usando simplesmente o comando `docker-compose up` ao invés do `docker run`
