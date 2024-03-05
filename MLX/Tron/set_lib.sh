@@ -15,16 +15,16 @@ NAME=Tron.exec
 NAME_BONUS=Tron.bonus
 GCC_FLAGS=-Wall -Wextra -Werror
 MLX_LIB=MLX42/build/libmlx42.a
-MLX_FLAGS=-LMLX42/build -lmlx42 -lm -ldl -pthread -lglfw
+MLX_HEADER=-I./MLX42/include/MLX42
+MLX_FLAGS= -lm -ldl -pthread -lglfw
 REMOVE=/usr/bin/rm -fr
 YOUR_SRC=\${wildcard source/*.c}
 YOUR_BONUS_SRC=\${wildcard bonus/*.c}
 
 all: \${MLX_LIB} \${NAME}
-.PHONY: all
 
 \${NAME}: \${YOUR_SRC}
-	cc \${GCC_FLAGS} -I. \${MLX_FLAGS} \${YOUR_SRC} -o \${NAME}
+	cc \${YOUR_SRC} \${MLX_HEADER} \${MLX_LIB} \${MLX_FLAGS} -o \${NAME}
 
 \${MLX_LIB}:
 ifeq (, \${wildcard MLX42/build})
@@ -34,19 +34,19 @@ endif
 	make -j4 -C MLX42/build
 
 bonus:
-	make YOUR_SRC=\"\${YOUR_BONUS_SRC}\" NAME=\${NAME_BONUS}
+	make YOUR_SRC="\${YOUR_BONUS_SRC}" NAME=\${NAME_BONUS}
 
 fclean:
 	\${REMOVE} MLX42/build \${NAME} \${NAME_BONUS}
-.PHONY:clean
+	.PHONY:clean
 
 re: fclean
 ifneq (, \${wildcard \${NAME_BONUS}})
-	make YOUR_SRC=\"\${YOUR_BONUS_SRC}\"
+	make YOUR_SRC="\${YOUR_BONUS_SRC}"
 else
 	make
 endif
-.PHONY:re" ;;
+.PHONY:re all fclean bonus clean";;
 		"FRENCH") if test ! -d minilibx-linux
 			then
 				$UNZIP ../minilibx-linux.zip
