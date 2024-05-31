@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: valland
+      MYSQL_USER: isend
+      MYSQL_PASSWORD: admin123
+      MYSQL_ROOT_PASSWORD: rooter123
+    volumes:
+      - ./src/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "6660:3306"
+
+  python:
+    build: .
+    depends_on:
+      - mysql
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_DATABASE=valland
+      - MYSQL_USER=isend
+      - MYSQL_PASSWORD=admin123
+    command: ["sh", "-c", "sleep 30 && python /app/populate_db.py"]
