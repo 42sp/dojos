@@ -1,8 +1,12 @@
-FROM python:3.9
+FROM mysql
 
-WORKDIR /app
+ENV MYSQL_DATABASE=valland MYSQL_ROOT_PASSWORD=1234 MYSQL_USER=guest MYSQL_PASSWORD=guest
 
-COPY ./src/requirements.txt /app/requirements.txt
-COPY ./src/populate.py /app/populate_db.py
+RUN mkdir -p /var/lib/mysql-files
+COPY ./src/init.sql /docker-entrypoint-initdb.d/
+COPY ./src/population.csv /var/lib/mysql-files/
 
-RUN pip install --no-cache-dir -r /app/requirements.txt
+EXPOSE 3306
+
+ENTRYPOINT [ "docker-entrypoint.sh" ]
+CMD ["mysqld"]
