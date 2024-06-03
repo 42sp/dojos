@@ -19,11 +19,14 @@ doj | -w
 2. L hlyivmlnv wl xrwzwzl mzl v xlnklhgl kli 2 lf nzrh kzozeizh.
 3. E zv wynob ahdbfds jyai jllukc sqj uxhoakyr.
 tri42
-4. ODZEALAFACAPDFINA IOAEAADM DFRUMGEO AATMIRES
-5. 000 111 10 111 1010 0000 00 10 111 000 01 100 01 11 0
+4. ODZEALAFACAPDFINA IOAEAADM DFRUMGEO AATMIRES.
+5. 000 111 10 111 1010 0000 00 10 111 000 01 100 01 11 0.
+6. Apenas o primeiro nome do cidadão é necessário.
 
 Jogue Justo
 NoBash
 2-metil-1,3,5-trinitrobenzeno
 gustinha
 true or false
+
+dcode is your friend.
