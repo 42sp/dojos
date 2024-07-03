@@ -1,0 +1,136 @@
+#!/bin/bash
+
+MINISHELL_PATH="../minishell"
+
+# Run a specific test if the file name was specified
+if [[ $1 ]]; then
+	test_lists=(
+		$1
+	)
+else
+	test_lists=(
+		"builtins"
+		"pipes"
+		"redirects"
+		"extras"
+	)
+fi
+
+if [[ $1 == "wildcards"  || $1 == "bonus" ]]; then
+	MINISHELL_PATH="../minishell_bonus"
+fi
+
+BOLD="\e[1m"
+YELLOW="\033[0;33m"
+GREY="\033[38;5;244m"
+PURPLE="\033[0;35m"
+BLUE="\033[0;36m"
+RED="\e[0;31m"
+END="\033[0m"
+
+chmod 000 ./test_files/invalid_permission
+mkdir ./outfiles
+mkdir ./mini_outfiles
+mkdir ./bash_outfiles
+
+printf $RED
+echo "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥";
+echo "                                                                                             ";
+echo " ██    ██ █ ██    █ █ █████ █   █ █████ █     █       ██████ █████ █████ ██████ █████ █████  ";
+echo " ███  ███ █ ███   █ █ █     █   █ █     █     █         ██   █     █       ██   █     █   ██ ";
+echo " █ ████ █ █ █ ██  █ █ █████ █████ ████  █     █         ██   ████  █████   ██   ████  █████  ";
+echo " █  ██  █ █ █  ██ █ █     █ █   █ █     █     █         ██   █         █   ██   █     █   ██ ";
+echo " █      █ █ █   ███ █ █████ █   █ █████ █████ █████     ██   █████ █████   ██   █████ █   ██ ";
+echo "                                                                                             ";
+echo "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥";
+echo "                                                                                              ";
+
+PROMPT=$(echo -e "\nexit\n" | $MINISHELL_PATH | head -n 1 | sed "s/\x1B\[[0-9;]\{1,\}[A-Za-z]//g" )
+# Helper commands:
+REMOVE_COLORS="sed s/\x1B\[[0-9;]\{1,\}[A-Za-z]//g"
+REMOVE_EXIT="grep -v ^exit$"
+
+echo "HI"
+
+for testfile in ${test_lists[*]}; do
+
+	printf $RED
+	echo ———————————— $testfile
+
+	while read teste; do
+		((i++))
+
+		rm -rf ./outfiles/*
+		rm -rf ./mini_outfiles/*
+		MINI_OUTPUT=$(echo -e "$teste" | $MINISHELL_PATH 2> /dev/null)
+		echo "TESTE: $teste"
+		echo "MINISHELL_PATH $MINISHELL_PATH"
+		echo "MINI OUTPUT: $MINI_OUTPUT"
+
+
+		MINI_OUTFILES=$(cp ./outfiles/* ./mini_outfiles &>/dev/null)
+		MINI_EXIT_CODE=$(echo -e "$MINISHELL_PATH\n$teste\necho \$?\nexit\n" | bash 2> /dev/null | $REMOVE_COLORS | grep -vF "$PROMPT" | $REMOVE_EXIT | tail -n 1)
+		MINI_ERROR_MSG=$(trap "" PIPE && echo "$teste" | $MINISHELL_PATH 2>&1 > /dev/null | grep -o '[^:]*$' )
+
+		rm -rf ./outfiles/*
+		rm -rf ./bash_outfiles/*
+		BASH_OUTPUT=$(echo -e "$teste" | bash 2> /dev/null)
+		BASH_EXIT_CODE=$(echo $?)
+		BASH_OUTFILES=$(cp ./outfiles/* ./bash_outfiles &>/dev/null)
+		BASH_ERROR_MSG=$(trap "" PIPE && echo "$teste" | bash 2>&1 > /dev/null | grep -o '[^:]*$' | head -n1)
+
+		OUTFILES_DIFF=$(diff --brief ./mini_outfiles ./bash_outfiles)
+
+		printf $YELLOW
+		printf "Test %3s: " $i
+		if [[ "$MINI_OUTPUT" == "$BASH_OUTPUT" && "$MINI_EXIT_CODE" == "$BASH_EXIT_CODE" && -z "$OUTFILES_DIFF" ]]; then
+			printf ✅
+			((ok++))
+			if [ "$MINI_ERROR_MSG" != "$BASH_ERROR_MSG" ]; then
+				printf "⚠️ "
+			fi
+		else
+			printf ❌
+		fi
+		printf "$GREY $teste \n$END"
+		if [ "$OUTFILES_DIFF" ]; then
+			echo "$OUTFILES_DIFF"
+			echo mini outfiles:
+			cat ./mini_outfiles/*
+			echo bash outfiles:
+			cat ./bash_outfiles/*
+		fi
+		if [ "$MINI_OUTPUT" != "$BASH_OUTPUT" ]; then
+			echo mini output = \($MINI_OUTPUT\)
+			echo bash output = \($BASH_OUTPUT\)
+		fi
+		if [ "$MINI_EXIT_CODE" != "$BASH_EXIT_CODE" ]; then
+			echo mini exit code = $MINI_EXIT_CODE
+			echo bash exit code = $BASH_EXIT_CODE
+		fi
+		if [ "$MINI_ERROR_MSG" != "$BASH_ERROR_MSG" ]; then
+			echo mini error = \($MINI_ERROR_MSG\)
+			echo bash error = \($BASH_ERROR_MSG\)
+		fi
+	done < $testfile
+done
+
+chmod 666 ./test_files/invalid_permission
+rm -rf ./outfiles
+rm -rf ./mini_outfiles
+rm -rf ./bash_outfiles
+
+printf $PURPLE
+printf $BOLD
+echo   $ok/$i
+printf $END
+
+if [[ "$ok" == "$i" ]]; then
+	echo "🎊 🎊 🎊"
+	echo "😎 😎 😎"
+	echo "🎉 🎉 🎉"
+	exit 0
+else
+	echo "😭 😭 😭"
+	exit 1
+fi
