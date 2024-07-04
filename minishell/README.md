@@ -1,4 +1,3 @@
-Para compilar o programa, execute o comando abaixo:
 <p align="center">
 	<b>
 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥<br>D O J O  DE  M I N I S H E L L<br>🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
