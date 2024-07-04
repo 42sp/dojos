@@ -28,7 +28,7 @@ BLUE="\033[0;36m"
 RED="\e[0;31m"
 END="\033[0m"
 
-chmod 000 ./test_files/invalid_permission
+#chmod 000 ./test_files/invalid_permission
 mkdir ./outfiles
 mkdir ./mini_outfiles
 mkdir ./bash_outfiles
@@ -50,8 +50,6 @@ PROMPT=$(echo -e "\nexit\n" | $MINISHELL_PATH | head -n 1 | sed "s/\x1B\[[0-9;]\
 REMOVE_COLORS="sed s/\x1B\[[0-9;]\{1,\}[A-Za-z]//g"
 REMOVE_EXIT="grep -v ^exit$"
 
-echo "HI"
-
 for testfile in ${test_lists[*]}; do
 
 	printf $RED
@@ -63,10 +61,6 @@ for testfile in ${test_lists[*]}; do
 		rm -rf ./outfiles/*
 		rm -rf ./mini_outfiles/*
 		MINI_OUTPUT=$(echo -e "$teste" | $MINISHELL_PATH 2> /dev/null)
-		echo "TESTE: $teste"
-		echo "MINISHELL_PATH $MINISHELL_PATH"
-		echo "MINI OUTPUT: $MINI_OUTPUT"
-
 
 		MINI_OUTFILES=$(cp ./outfiles/* ./mini_outfiles &>/dev/null)
 		MINI_EXIT_CODE=$(echo -e "$MINISHELL_PATH\n$teste\necho \$?\nexit\n" | bash 2> /dev/null | $REMOVE_COLORS | grep -vF "$PROMPT" | $REMOVE_EXIT | tail -n 1)
