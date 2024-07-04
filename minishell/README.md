@@ -6,7 +6,7 @@
 
 ## Uma Breve Introdução
 
-Todo mundo sabe que o minishell é zica. Popularmente conhecido como 🔥minihell🔥, o projeto é grande e frequentemente ansiedade. A intenção desse Dojo é levar para um clima de diversão e descontração uma pitadinha do minishell pra quem já conhece dos pormenores conseguir trocar com quem ainda não finalizou o projeto e, juntos, aprenderem através do desafio proposto.
+Todo mundo sabe que o minishell é zica. Popularmente conhecido como 🔥minihell🔥, o projeto é grande e frequentemente gera ansiedade. A intenção desse Dojo é levar para um clima de diversão e descontração uma pitadinha do minishell pra quem já conhece dos pormenores conseguir trocar com quem ainda não finalizou o projeto e, juntos, aprenderem através do desafio proposto.
 
 ## 🚀 O Desafio
 
