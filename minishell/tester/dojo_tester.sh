@@ -109,7 +109,6 @@ for testfile in ${test_lists[*]}; do
 	done < $testfile
 done
 
-chmod 666 ./test_files/invalid_permission
 rm -rf ./outfiles
 rm -rf ./mini_outfiles
 rm -rf ./bash_outfiles
