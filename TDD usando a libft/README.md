@@ -52,6 +52,6 @@ MU_TEST(test_atoi_convert_1_char_to_1_integer)
 
 😜 Para rodar os testes, é só usar a linha de comando abaixo:
 
-`gcc ./src/ft_isalpha.c ./tests/test_ft_isalpha.c -lrt -lm -o test_program && ./test_program`
+`gcc ./src/ft_atoi.c ./tests/test_ft_atoi.c -lrt -lm -o test_program && ./test_program`
 
 Bora? 🚀
