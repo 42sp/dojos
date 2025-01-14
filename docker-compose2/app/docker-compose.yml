@@ -1,0 +1,12 @@
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: dockerfile.dev
+    # ports: add the services port
+    # networks:  add the services network
+    # depends_on: what services this service depends on
+    stdin_open: true # keep stdin open
+    tty: true # allocate a pseudo-TTY
+    volumes: # add the services volume or root volume
+      - app:/app # example for root volume
