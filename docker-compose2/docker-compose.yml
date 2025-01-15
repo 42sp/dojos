@@ -1,0 +1,9 @@
+services:
+  dev:
+    build:
+      context: docker/dev
+      dockerfile: dockerfile
+    # ports: add the services port
+    # networks:  add the services network
+    # depends_on: what services this service depends on
+    volumes: # add the volume from the host to the container
