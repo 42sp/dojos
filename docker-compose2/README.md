@@ -61,6 +61,9 @@ A estrutura básica já estará disponível para quem for realizar o dojo:
 
 Repetiremos o processo até que **todos os serviços** estejam funcionando.
 
+- **Somente o nginx deve receber requisiçoes externas**
+- **Os outros serviços so podem se comunicar dentro rede docker**
+
 ## Passos Detalhados
 
 1. **Ambiente de Desenvolvimento (`dev`)**
@@ -71,7 +74,7 @@ Repetiremos o processo até que **todos os serviços** estejam funcionando.
    - Só passe para o próximo passo se ambas as respostas forem **sim**.
 
 2. **Configuração e Testes**
-   - Cada novo serviço (por exemplo, `service1`, `service2`, `service3`) terá seu próprio Dockerfile.
+   - Cada novo serviço (por exemplo, `service1`, `service2`, `service3`) terá seu próprio Dockerfile (**defina corretamente o nome do serviço**).
    - Ajuste o `docker-compose` de modo que cada serviço suba em seu próprio contêiner, mas que o desenvolvimento continue ocorrendo dentro do contêiner `dev`.
    - Teste o fluxo das requisições para ter certeza de que o contêiner correto recebe as chamadas.
    - Se a requisição chegar no contêiner de `dev` ao invés do contêiner específico do serviço, a configuração precisa ser corrigida.
@@ -93,7 +96,11 @@ Repetiremos o processo até que **todos os serviços** estejam funcionando.
    - A dica aqui é usar o **Git** ou outro sistema de versionamento/integração para controlar como as alterações entram em produção.
 
 ## Dicas Finais
-
+   ```
+   Documentação:
+      https://hub.docker.com/search?badges=official
+      https://docs.docker.com/reference/dockerfile/
+   ```
 - Use e abuse dos logs do Docker para entender o que está acontecendo.
 - Não hesite em atualizar os `Dockerfile` e o `docker-compose.yml` conforme novas dependências forem necessárias.
 - Lembre-se de que, para prosseguir em cada etapa, os serviços devem estar configurados corretamente e funcionando como esperado.
