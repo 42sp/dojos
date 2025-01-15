@@ -42,6 +42,7 @@ A estrutura básica já estará disponível para quem for realizar o dojo:
 
 - **raiz**: pasta principal, onde ficam o `docker-compose.yml` e as subpastas de toda aplicação.
 - **.devcontainer**: pasta que contém as instruções para o funcionamento do plugin "Dev Container" do vscode.
+   as configurações ja estão feitas, é so usar!
 - **docker**: pasta que contém os arquivos para construção de cada container que será utilizado pela aplicação. Cada container deve estar separada em sua própria pasta contendo seus arquivos adicionais de configuração (quando necessário). Um container especial chamaremos de "dev" que será o container de desenvolvimento.
 - **product**: pasta que contém toda aplicação que desenvolveremos (backend, frontend, testes, scripts de database ou qualquer outro componente necessário).
 
