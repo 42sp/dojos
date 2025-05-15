@@ -64,7 +64,7 @@ A estrutura básica já estará disponível para quem for realizar o dojo:
    ```
    1. Configurar o `Dockerfile` do serviço escolhido (dica: fazer o Nginx, frontend e backend).
    2. Configurar o serviço no `docker-compose` (e atualizar o serviço `dev`, se necessário).
-   3. Testar para garantir que está tudo funcionando e que o serviço funciona no seu próprio contêiner. Porém, a **desenvoltura** (edição de arquivos, etc.) continua acontecendo no contêiner de desenvolvimento mas o serviço desenvolvido deve rodar tbm no contaienr feito para ele.
+   3. Testar para garantir que está tudo funcionando e que o serviço funciona no seu próprio contêiner. Porém, a **desenvoltura** (edição de arquivos, etc.) continua acontecendo no contêiner de desenvolvimento mas o serviço desenvolvido deve rodar também no container feito para ele.
 
 Repetiremos o processo até que **todos os serviços** estejam funcionando.
 
