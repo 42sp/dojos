@@ -8,6 +8,7 @@ Qualquer Hello World, desde que eles se comuniquem.**
 ## Estrutura do Projeto
 
 A estrutura básica já estará disponível para quem for realizar o dojo:
+`nem todos os arquivos precisam ser usados`
 
 ```
 .
@@ -25,15 +26,12 @@ A estrutura básica já estará disponível para quem for realizar o dojo:
 │       └── Dockerfile
 │       └── config
 │           └── startup.sh
-├── product
+├── app
 │   ├── backend
-│   │   └── file.ts
+│   │   └── something.x
 │   ├── frontend
-│   │   └── file.x
-│   ├── database
-│   │    └── data.sql
-│   ├── other.sh
-│   └── something.txt
+│   │   └── something.y
+│   └── something.cfg
 ├── README.md
 └── docker-compose.yml
 ```
