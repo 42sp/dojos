@@ -7,7 +7,7 @@
 ## Não adianta fazer mistério, você vai ter que mostrar sua mão
 Não é poker nem 21, não estamos jogando a dinheiro... a ideia é ir revelando os segredos das cartas...
 
-*Não, também não vamos levar para o lado exotérico, só queremos saber quais são as cartas mesmo.*
+*Não, também não vamos levar para o lado esotérico, só queremos saber quais são as cartas mesmo.*
 
 ## 🚀 O Desafio
 
