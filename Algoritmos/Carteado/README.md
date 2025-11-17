@@ -31,17 +31,29 @@ Observe que a primeira entrada na resposta é considerada o topo do baralho.
 *Exemplo 1*
 
 **Entrada:** `baralho = [17,13,11,2,3,5,7]`
+
 **Saída:** `[2,13,3,11,5,17,7]`
+
 **Mas como?**
+
 Recebemos o baralho na ordem `[17, 13, 11, 2, 3, 5, 7]` (essa ordem não importa) e o reordenamos.
+
 Após a reordenação, o baralho começa como `[2, 13, 3, 11, 5, 17, 7]`, onde 2 é o topo do baralho.
+
 Revelamos o 2 e movemos o 13 para o fundo. O baralho agora é `[3, 11, 5, 17, 7, 13]`.
+
 Revelamos o 3 e movemos o 11 para o fundo. O baralho agora é `[5, 17, 7, 13, 11]`.
+
 Revelamos o 5 e movemos o 17 para o fundo. O baralho agora é `[7, 13, 11, 17]`.
+
 Revelamos o 7 e movemos o 13 para o fundo. O baralho agora é `[11, 17, 13]`.
+
 Revelamos o 11 e movemos o 17 para o fundo. O baralho agora é `[13, 17]`.
+
 Revelamos 13 e movemos 17 para o fundo. O baralho agora é `[17]`.
+
 Revelamos 17.
+
 Como todas as cartas reveladas estão em ordem crescente, a resposta está correta.
 
 Bora?
